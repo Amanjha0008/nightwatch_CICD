@@ -1,0 +1,4 @@
+.env
+allure-reports/
+reports/
+allure-results/
