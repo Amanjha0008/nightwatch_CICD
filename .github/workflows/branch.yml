@@ -36,4 +36,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
          name: Nightwatch-test-results
-         path: Nightwatch_Go1-/tests_output/nightwatch-html-report
+         path: nighwatch_CICD/tests_output/nightwatch-html-report
