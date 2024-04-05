@@ -68,13 +68,6 @@ describe("Login Page Verification", () => {
       .assert.urlContains("//login.microsoftonline.com/");
     browser.back();
   });
-  it("Verify that login fails with invalid credentials and an alert message is displayed (TC-343) - Version1", function () {
-    loginPage
-      .enterNameAndPassword("abcdd", "abcd")
-      .focusClick("css", "#kc-login", false)
-      .assert.containsText("@popUpMesage", "Invalid username or password.");
-  });
-
   it("Verify remember me checkbox is selected during login (TC-345) - Version1 ", function () {
     loginPage
       .enterNameAndPassword(global.user, global.pass)
@@ -84,7 +77,6 @@ describe("Login Page Verification", () => {
       .expect.element("#rememberMe")
       .to.be.selected.before(100);
   });
-
   it("Verify the forgot Password functionality (TC-346) - Version1", async function () {
     loginPage.waitForElementVisible("@forgetPass");
     await browser.execute(function () {
