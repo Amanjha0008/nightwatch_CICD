@@ -252,11 +252,11 @@ info: Title: {"timestamp":"2024-04-05T05:48:44.523Z"}
 info: afterEach {"timestamp":"2024-04-05T05:48:45.003Z"}
 info: [object Object] {"timestamp":"2024-04-05T05:48:45.004Z"}
 info: after {"timestamp":"2024-04-05T05:48:45.151Z"}
-info: before {"timestamp":"2024-04-05T06:03:37.651Z"}
-info: before Each {"timestamp":"2024-04-05T06:03:39.040Z"}
-info: unknown command: unknown command: session/undefined/status {"error":"unknown command","stacktrace":"","timestamp":"2024-04-05T06:03:39.047Z"}
-info: Test Executed {"timestamp":"2024-04-05T06:03:42.295Z"}
-info: Title: {"timestamp":"2024-04-05T06:03:47.091Z"}
-info: afterEach {"timestamp":"2024-04-05T06:03:47.509Z"}
-info: [object Object] {"timestamp":"2024-04-05T06:03:47.509Z"}
-info: after {"timestamp":"2024-04-05T06:03:47.701Z"}
+info: before {"timestamp":"2024-04-05T06:20:52.232Z"}
+info: before Each {"timestamp":"2024-04-05T06:20:54.007Z"}
+info: unknown command: unknown command: session/undefined/status {"error":"unknown command","stacktrace":"","timestamp":"2024-04-05T06:20:54.021Z"}
+info: Test Executed {"timestamp":"2024-04-05T06:20:59.303Z"}
+info: Title: {"timestamp":"2024-04-05T06:21:07.572Z"}
+info: afterEach {"timestamp":"2024-04-05T06:21:08.387Z"}
+info: [object Object] {"timestamp":"2024-04-05T06:21:08.389Z"}
+info: after {"timestamp":"2024-04-05T06:21:08.631Z"}
