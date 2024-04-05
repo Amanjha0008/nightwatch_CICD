@@ -1,0 +1,39 @@
+name: Automated Testing
+
+on: 
+  push:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 10 * * 1'  # Run at 10:00 AM every Monday
+
+jobs:
+   Nightwatch_test:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+      
+         cache: 'npm'
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+
+      - name: npm-install
+        run: |
+          npm ci
+      - run: |
+          sudo apt-get install xvfb
+      - name: Run Nightwatch tests
+        run: |
+          xvfb-run --auto-servernum npx nightwatch tests/loginPageTest.js --chrome env
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+         name: Nightwatch-test-results
+         path: Nightwatch_Go1-/tests_output 
